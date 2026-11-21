@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#75c9e8">
+  <meta name="description" content="Descubre Uruguay: sus 19 departamentos, cultura, naturaleza y la comunidad uruguaya en el mundo.">
+  <title>Uruguay D20 — Descubre Uruguay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Uruguay D20, inicio">
+      <span class="flag" aria-hidden="true"><i></i><i></i><i></i><i></i><b>☀</b></span>
+      <span><strong>URUGUAY</strong><small>D20 · Un país, muchas historias</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#destinos" data-i18n="nav_destinations">Destinos</a>
+      <a href="#departamentos" data-i18n="nav_departments">Departamentos</a>
+      <a href="#cultura" data-i18n="nav_culture">Cultura</a>
+      <a href="#d20" data-i18n="nav_d20">Departamento 20</a>
+      <a href="#guia" data-i18n="nav_guide">Guía práctica</a>
+    </nav>
+    <label class="language-select"><span class="sr-only" data-i18n="language">Idioma</span>
+      <select id="language" aria-label="Seleccionar idioma">
+        <option value="es">🇪🇸 ES</option><option value="ca">🇦🇩 CA</option><option value="en">🇬🇧 EN</option>
+        <option value="fr">🇫🇷 FR</option><option value="ru">🇷🇺 RU</option><option value="de">🇩🇪 DE</option>
+      </select>
+    </label>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="hero_eyebrow">AMÉRICA DEL SUR · RÍO DE LA PLATA</p>
+        <h1 data-i18n="hero_title">Un pequeño país.<br><em>Un mundo por descubrir.</em></h1>
+        <p class="hero-lead" data-i18n="hero_lead">Playas infinitas, pueblos con historia, naturaleza abierta y una cultura que se comparte alrededor del mate. Bienvenido a Uruguay.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#destinos" data-i18n="explore">Explorar Uruguay <span>↗</span></a><a class="text-link" href="#departamentos" data-i18n="all_departments">Conocer los 19 departamentos</a></div>
+        <div class="hero-facts"><div><strong>19</strong><span data-i18n="fact_departments">departamentos</span></div><div><strong>176.215</strong><span data-i18n="fact_km">km² de territorio</span></div><div><strong>3,4 M</strong><span data-i18n="fact_people">habitantes aprox.</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración del paisaje uruguayo">
+        <div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="river"></div>
+        <div class="art-label"><span>34° 54′ S</span><span>56° 12′ O</span><small>MONTEVIDEO · URUGUAY</small></div>
+      </div>
+      <div class="hero-bottom"><span data-i18n="hero_bottom">DEL ATLÁNTICO A LA FRONTERA, DESCUBRE CADA RINCÓN</span><span>↓</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div class="section-kicker">01 / <span data-i18n="discover">DESCUBRIR</span></div>
+      <div><h2 data-i18n="intro_title">La esencia de Uruguay está en sus contrastes.</h2><p class="large-copy" data-i18n="intro_copy">Un país de escala cercana y horizontes amplios: costa atlántica, campos ondulados, ríos inmensos, ciudades vivas y localidades donde el tiempo parece ir a otro ritmo.</p></div>
+      <div class="intro-note"><span class="note-mark">✳</span><p data-i18n="intro_note">Esta guía reúne territorio, memoria y vida cotidiana para acercarte al Uruguay real, más allá de las postales.</p></div>
+    </section>
+
+    <section class="destinations section-wrap" id="destinos">
+      <div class="section-heading"><div><div class="section-kicker">02 / <span data-i18n="highlights">IMPRESCINDIBLES</span></div><h2 data-i18n="dest_title">Lugares que se quedan contigo.</h2></div><p data-i18n="dest_subtitle">De la energía de la capital a la calma de la costa y el interior.</p></div>
+      <div class="destination-grid">
+        <article class="destination-card destination-mvd"><div class="destination-number">01</div><div><span class="card-tag" data-i18n="city">CIUDAD</span><h3>Montevideo</h3><p data-i18n="mvd_desc">Rambla, arquitectura, mercados, música y vida rioplatense frente al mar.</p><a href="#departamentos" data-i18n="discover_more">Descubrir →</a></div></article>
+        <article class="destination-card destination-east"><div class="destination-number">02</div><div><span class="card-tag" data-i18n="coast">COSTA ATLÁNTICA</span><h3 data-i18n="east_title">Rocha y Maldonado</h3><p data-i18n="east_desc">Dunas, lagunas, playas abiertas y pueblos costeros con personalidad propia.</p><a href="#departamentos" data-i18n="discover_more">Descubrir →</a></div></article>
+        <article class="destination-card destination-west"><div class="destination-number">03</div><div><span class="card-tag" data-i18n="heritage">PATRIMONIO</span><h3 data-i18n="colonia_title">Colonia del Sacramento</h3><p data-i18n="colonia_desc">Calles empedradas, fachadas históricas y atardeceres sobre el Río de la Plata.</p><a href="#departamentos" data-i18n="discover_more">Descubrir →</a></div></article>
+      </div>
+    </section>
+
+    <section class="departments-section" id="departamentos">
+      <div class="section-wrap">
+        <div class="section-heading light-heading"><div><div class="section-kicker">03 / <span data-i18n="territory">TERRITORIO</span></div><h2 data-i18n="dept_title">Diecinueve maneras de vivir Uruguay.</h2></div><p data-i18n="dept_subtitle">Cada departamento tiene su paisaje, su historia y su forma de recibirte.</p></div>
+        <div class="department-tools"><label class="search-box"><span>⌕</span><input id="department-search" type="search" data-i18n-placeholder="search_department" placeholder="Buscar departamento o localidad…"></label><span id="department-count" class="result-count"></span></div>
+        <div class="department-grid" id="department-grid"></div>
+        <p class="map-note" data-i18n="map_note">Selecciona un departamento para conocer su capital, geografía, identidad y principales atractivos.</p>
+      </div>
+    </section>
+
+    <section class="culture section-wrap" id="cultura">
+      <div class="section-heading"><div><div class="section-kicker">04 / <span data-i18n="identity">IDENTIDAD</span></div><h2 data-i18n="culture_title">Una cultura que se vive y se comparte.</h2></div><p data-i18n="culture_subtitle">Tradiciones que cuentan quiénes somos y cómo nos encontramos.</p></div>
+      <div class="culture-grid">
+        <article class="culture-item"><span class="culture-icon">◉</span><div><h3 data-i18n="mate">El mate</h3><p data-i18n="mate_desc">Mucho más que una infusión: una pausa, una conversación y un gesto cotidiano de encuentro.</p></div></article>
+        <article class="culture-item"><span class="culture-icon">♨</span><div><h3 data-i18n="asado">El asado</h3><p data-i18n="asado_desc">Fuego lento, conversación larga y una tradición gastronómica profundamente compartida.</p></div></article>
+        <article class="culture-item"><span class="culture-icon">♫</span><div><h3 data-i18n="music">Música y carnaval</h3><p data-i18n="music_desc">Candombe, murga, tango y carnaval: ritmos que llenan calles, tablados y barrios.</p></div></article>
+        <article class="culture-item"><span class="culture-icon">⚽</span><div><h3 data-i18n="football">Fútbol</h3><p data-i18n="football_desc">Una pasión histórica que forma parte de la memoria colectiva y la identidad nacional.</p></div></article>
+        <article class="culture-item"><span class="culture-icon">▤</span><div><h3 data-i18n="literature">Literatura</h3><p data-i18n="literature_desc">Una tradición de voces fundamentales, poesía, narrativa y pensamiento rioplatense.</p></div></article>
+        <article class="culture-item"><span class="culture-icon">✿</span><div><h3 data-i18n="celebrations">Fiestas populares</h3><p data-i18n="celebrations_desc">Celebraciones rurales, fiestas de la vendimia, encuentros folclóricos y festivales locales.</p></div></article>
+      </div>
+    </section>
+
+    <section class="d20-section" id="d20">
+      <div class="section-wrap d20-layout">
+        <div><div class="section-kicker">05 / <span data-i18n="community">COMUNIDAD GLOBAL</span></div><h2 data-i18n="d20_title">El Departamento 20 no tiene fronteras.</h2><p class="d20-lead" data-i18n="d20_lead">Hay un Uruguay que vive dentro del país y otro que viaja con su gente. El Departamento 20 representa a las comunidades uruguayas que mantienen sus raíces en todos los rincones del mundo.</p><a class="button button-light" href="#guia-d20" data-i18n="d20_explore">Conocer la diáspora <span>↗</span></a></div>
+        <div class="world-card"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="world-center">D20</div><span class="city-label city-one">Madrid</span><span class="city-label city-two">Buenos Aires</span><span class="city-label city-three">Barcelona</span><span class="city-label city-four">Nueva York</span><span class="city-label city-five">Sídney</span><span class="world-caption" data-i18n="world_caption">UNA COMUNIDAD · MUCHOS DESTINOS</span></div>
+      </div>
+      <div class="section-wrap d20-detail" id="guia-d20"><div><h3 data-i18n="d20_places">Uruguayos en el mundo</h3><p data-i18n="d20_places_desc">Las comunidades en el exterior se organizan a través de asociaciones, centros culturales, consulados, redes familiares y encuentros que mantienen vivas las tradiciones.</p></div><div><h3 data-i18n="d20_data">Una cifra que requiere contexto</h3><p data-i18n="d20_data_desc">Las estimaciones de población uruguaya residente en el exterior varían según el año, la definición de emigrante y la fuente. Por eso, esta guía identificará siempre la fecha y el organismo de cada dato, sin presentar estimaciones como censos exactos.</p></div></div>
+    </section>
+
+    <section class="guide section-wrap" id="guia">
+      <div class="section-heading"><div><div class="section-kicker">06 / <span data-i18n="plan">PLANIFICAR</span></div><h2 data-i18n="guide_title">Antes de poner rumbo a Uruguay.</h2></div><p data-i18n="guide_subtitle">Información esencial para preparar tu visita con tranquilidad.</p></div>
+      <div class="guide-grid">
+        <article><span>01</span><h3 data-i18n="weather">Clima y estaciones</h3><p data-i18n="weather_desc">Clima templado, con estaciones diferenciadas. El verano va de diciembre a marzo y el invierno de junio a septiembre.</p></article>
+        <article><span>02</span><h3 data-i18n="currency">Moneda y pagos</h3><p data-i18n="currency_desc">La moneda oficial es el peso uruguayo (UYU). La aceptación de tarjetas es amplia en ciudades y zonas turísticas.</p></article>
+        <article><span>03</span><h3 data-i18n="language_info">Idioma</h3><p data-i18n="language_desc">El idioma oficial de uso general es el español, con rasgos rioplatenses. En zonas fronterizas hay influencia del portugués.</p></article>
+        <article><span>04</span><h3 data-i18n="transport">Cómo moverse</h3><p data-i18n="transport_desc">Hay autobuses interdepartamentales, servicios urbanos, taxis y alquiler de vehículos. Las distancias permiten recorrer el país por carretera.</p></article>
+        <article><span>05</span><h3 data-i18n="food">Gastronomía</h3><p data-i18n="food_desc">Asado, chivito, empanadas, pescado, quesos, dulce de leche y vinos forman parte de una mesa diversa.</p></article>
+        <article><span>06</span><h3 data-i18n="documents">Documentación</h3><p data-i18n="documents_desc">Los requisitos dependen de tu nacionalidad y del motivo del viaje. Consulta siempre la información oficial antes de salir.</p></article>
+      </div>
+    </section>
+
+    <section class="sources-section">
+      <div class="section-wrap sources-layout"><div><div class="section-kicker">07 / <span data-i18n="reliable_info">INFORMACIÓN FIABLE</span></div><h2 data-i18n="sources_title">Conoce Uruguay desde sus fuentes.</h2><p data-i18n="sources_desc">Los datos territoriales y demográficos deben contrastarse con organismos oficiales. Consulta las fuentes antes de organizar tu viaje.</p></div><div class="source-links"><a href="https://uruguaynatural.com/es/" target="_blank" rel="noopener">Uruguay Natural <span>↗</span></a><a href="https://www.gub.uy/" target="_blank" rel="noopener">Portal del Estado uruguayo <span>↗</span></a><a href="https://www.ine.gub.uy/" target="_blank" rel="noopener">Instituto Nacional de Estadística <span>↗</span></a><a href="https://www.gub.uy/ministerio-relaciones-exteriores/" target="_blank" rel="noopener">Ministerio de Relaciones Exteriores <span>↗</span></a></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="section-wrap footer-main"><a class="brand footer-brand" href="#inicio"><span class="flag"><i></i><i></i><i></i><i></i><b>☀</b></span><span><strong>URUGUAY</strong><small>D20 · Un país, muchas historias</small></span></a><p data-i18n="footer_motto">Un país que se descubre viajando y se lleva siempre en el corazón.</p><div class="footer-credit"><span data-i18n="developed">Desarrollo y diseño: Claudio González</span><a href="mailto:cfgg2006@gmail.com">cfgg2006@gmail.com</a></div></div><div class="footer-bottom"><div class="section-wrap"><span>© <span id="year"></span> Uruguay D20</span><span data-i18n="legal">Contenido informativo. Las marcas, fotografías y materiales de terceros pertenecen a sus respectivos titulares; se indicarán sus fuentes y licencias.</span><a href="#inicio" data-i18n="back_top">Volver arriba ↑</a></div></div></footer>
+
+  <dialog id="department-dialog" class="department-dialog"><button class="dialog-close" id="dialog-close" aria-label="Cerrar">×</button><div id="department-detail"></div></dialog>
+</body>
+</html>
